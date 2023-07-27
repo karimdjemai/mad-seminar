@@ -35,7 +35,7 @@
 %------------------------------------------------
 
 \usepackage{booktabs} % Required for better table rules
-
+\usepackage{animate} 
 %----------------------------------------------------------------------------------------
 %	 TITLE SLIDE
 %----------------------------------------------------------------------------------------
@@ -62,8 +62,15 @@
     \maketitle % Automatically created using the information in the commands above
 \end{frame}
 
+
 % Teaser
-\section{Teaser}
+% \section{Teaser}
+\begin{frame}{Teaser}
+    % \begin{figure}
+    \animategraphics[autoplay,loop,width=\linewidth]{10}{Images/cat/cat--}{0}{55}
+    %     \caption{Not very efficient, but cute.}
+    % \end{figure}
+\end{frame}
 
 % Table of Contents
 \begin{frame}{Outline}
@@ -73,15 +80,28 @@
 \section{Introduction}
 \subsection{Definitions}
 \begin{frame}{Definitions}
+    \begin{block}{Definition Coverage Problem}
+        \begin{itemize}
+            \item let $D$ be the tool size
+                  % \item $S$ is a set of sensors
+                  % \item $C$ is a set of cells
+                  % \item $C$ is a subset of $S$
+                  % \item $C$ is a subset of $R$
+                  % \item $C$ is a subset of $S$
+        \end{itemize}
+    \end{block}
 \end{frame}
-\subsection{Complecity}
-\begin{frame}{Complecity}
+\subsection{Complexity}
+\begin{frame}{Complexity}
 \end{frame}
 \subsection{Related Work}
 \begin{frame}{Related Work}
 \end{frame}
 
 \section{Spiral STC}
+\subsection{Visualization}
+\begin{frame}{Visualization}
+\end{frame}
 \subsection{2D Spiral STC}
 \begin{frame}{2D Spiral STC}
 \end{frame}
@@ -90,9 +110,6 @@
 \end{frame}
 \subsection{Bounds}
 \begin{frame}{Bounds}
-\end{frame}
-\subsection{Visualization}
-\begin{frame}{Visualization}
 \end{frame}
 
 \section{Scan STC}
@@ -109,7 +126,11 @@
 \section{Analysis of the Algorithms}
 \subsection{Theorem 1}
 \begin{frame}{Theorem 1}
+    \begin{block}{Theorem 1}
+        Spiral-STC and Scan-STC cover the work-area grid using a path of total length $l \leq (n + m)D$
+    \end{block}
 \end{frame}
+
 \subsection{Optimality and Competitive Ratio}
 \begin{frame}{Optimality and Competitive Ratio}
 \end{frame}
@@ -121,6 +142,9 @@
 
 \section{Conclusion}
 \begin{frame}{Conclusion}
+    \begin{itemize}
+        \item Spiral STC and Scan STC are competitive online algorithms for the coverage problem
+    \end{itemize}
 \end{frame}
 
 \begin{frame}[focus]
