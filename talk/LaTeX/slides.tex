@@ -68,8 +68,8 @@
 % \section{Teaser}
 \begin{frame}{Teaser}
     \begin{figure}
-        \todo[inline]{reactivate}
-        % \animategraphics[autoplay,loop,width=0.8\linewidth]{10}{Images/cat/cat--}{0}{55}
+        % \todo[inline]{reactivate}
+        \animategraphics[autoplay,loop,width=0.8\linewidth]{10}{Images/cat/cat--}{0}{55}
         \caption{Not very efficient, but cute.}
     \end{figure}
 \end{frame}
@@ -85,7 +85,7 @@
     \begin{columns}
         \column{0.5\textwidth}
         \begin{figure}
-            \includegraphics[width=0.8\linewidth]{Images/inv_fig1.png}
+            \includegraphics[width=\linewidth]{Images/inv_fig1.png}
             \caption{The work-area grid}
         \end{figure}
         \column{0.5\textwidth}
@@ -103,7 +103,7 @@
     \begin{columns}
         \column{0.5\textwidth}
         \begin{figure}
-            \includegraphics[width=0.8\linewidth]{Images/inv_fig1.png}
+            \includegraphics[width=\linewidth]{Images/inv_fig1.png}
             \caption{The work-area grid}
         \end{figure}
         \column{0.5\textwidth}
@@ -120,7 +120,7 @@
     \begin{columns}
         \column{0.5\textwidth}
         \begin{figure}
-            \includegraphics[width=0.8\linewidth]{Images/DFS.png}
+            \includegraphics[width=\linewidth]{Images/DFS.png}
             \caption{A trivial solution: DFS}
         \end{figure}
         \column{0.5\textwidth}
@@ -254,17 +254,14 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Theorem 1 - Preliminaries}
+\begin{frame}{Theorem 1 - Repetitive coverages}
     \begin{itemize}
-        \item Repetitive coverages
-              \begin{itemize}
-                  \item When a subcell is covered, then uncovered and later covered again
-                  \item Inter-cell repetitive coverage: Between two 2D cells
-                  \item Intra-cell repetitive coverage: Within a 2D cell
-              \end{itemize}
+        \item When a subcell is covered, then uncovered and later covered again
+        \item Inter-cell repetitive coverage: Between two 2D cells
+        \item Intra-cell repetitive coverage: Within a 2D cell
     \end{itemize}
     \begin{figure}
-        \includegraphics[width=0.8\linewidth]{Images/inv_fig9.png}
+        \includegraphics[width=\linewidth]{Images/inv_fig9.png}
         \caption{Repetitive coverage counting of a 2D cell.}
     \end{figure}
 \end{frame}
@@ -276,7 +273,7 @@
         \item No change in total amount of repetitive coverages
     \end{itemize}
     \begin{figure}
-        \includegraphics[width=0.8\linewidth]{Images/inv_fig9.png}
+        \includegraphics[width=\linewidth]{Images/inv_fig9.png}
         \caption{Repetitive coverage counting of a 2D cell.}
     \end{figure}
 \end{frame}
@@ -308,9 +305,10 @@
 
 \begin{frame}{Claim 1 - Case 1}
     \centerline{\includegraphics[width=0.2\linewidth]{Images/board.png}}
+    \pause
     \begin{itemize}
         \item 1 free subcell
-        \item only single sided entry edge
+        \item Only single sided entry edge
         \item $1$ inter-cell repetitive coverage
         \item $1$ boundary cell
     \end{itemize}
@@ -321,7 +319,6 @@
         \includegraphics[width=\linewidth]{Images/inv_10_bot.png}
         \caption{2 free subcells, double sided entry edge (left) and single sided entry edge (right).}
     \end{figure}
-    \todo[inline]{color boundary subcells}
     \begin{columns}
         \column{0.5\textwidth}
         \begin{itemize}
